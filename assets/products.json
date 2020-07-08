@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+            "_id":"0",
+            "title":"Eukanuba Active Adult Large Breed",
+            "path":"food.webp",
+            "price":"€ 45.00"
+        },
+        {
+            "_id":"1",
+            "title":"Comfort Dog House",
+            "path":"house.webp",
+            "price":"€ 102.99"
+        },
+        {
+            "_id":"2",
+            "title":"Wild Knots Bears",
+            "path":"doll.webp",
+            "price":"€ 4.99"
+        },
+        {
+            "_id":"3",
+            "title":"6 x Barkoo Chew Bones with Filling",
+            "path":"bones.webp",
+            "price":"€ 5.79"
+        },
+        {
+            "_id":"4",
+            "title":"Barkoo Filled Chew Bone – with Mint",
+            "path":"snack.webp",
+            "price":"€ 8.69"
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*, *:before, *:after {
+    box-sizing: inherit;   
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    @media #{$mq-1400} {
+        padding-top: 26px;
+    }
+    @media #{$mq-1400-up} {
+        padding-top: 26px;
+    }
+    @media #{$mq-768} {
+        padding-top: 32px;
+    }
+}
+
+main {
+    width: 100%;
+    section:focus {
+        outline: none;
+    }
+}
+
+.header-img {
+    z-index: 1;
+    position: absolute;
+    width: 1390px;
+    height: 1390px;
+    background: $headerBlue;
+    border-radius: 50%;
+    top: -630px;
+    right: -280px;
+    clip-path: circle(695px at center);
+    @media #{$mq-500} {
+        right: -500px;
+        top: -815px;
+    }
+    img{
+        position: absolute;
+        bottom: -7px;
+        right: 375px;
+        @media #{$mq-768} {
+            width: 456px;
+        }
+        @media #{$mq-500} {
+            width: 369px;
+            opacity: 0.1;
+        }
+    }
+    @media #{$mq-768} {
+        width: 1225px;
+        height: 1225px;
+        top: -523px;
+        right: -523px;
+        clip-path: circle(555px at center);
+    }
+}
+.container {
+    z-index: 2;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+
+    @media #{$mq-1400} {
+        max-width: 1180px;
+    }
+    @media #{$mq-1400-up} {
+        width: 1180px;
+    }
+    @media #{$mq-768} {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+    button {
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+    button.normal-btn {
+        border-radius: 8pt;
+        background-color: $green;
+        color: $white;
+        border: none;
+        padding: 12px 24px;
+        font-weight: bold;
+        &:active, &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $darkgreen;
+        }
+    }
+    button.toggle-btn,
+    button.close-btn {
+        opacity: 0;
+        background: transparent;
+        border: none;
+        z-index: 3;
+        transition: all .3s ease-in-out;
+    }
+    button.toggle-btn {
+        @media #{$mq-500} {
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            opacity: 1;
+        }
+    }
+    button.close-btn {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        img {
+            width: 70%;
+        }
+    }
+    input, textarea {
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+}

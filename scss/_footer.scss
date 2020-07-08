@@ -1,0 +1,190 @@
+footer {
+    background-color: $darkerblue;
+    position: relative;
+    .container {
+        padding-left: 0;
+        @media #{$mq-500} {
+            padding: 0;
+        }
+        .footContent {
+            display: grid;
+            grid-template-columns: 35% 13% 14% auto;
+            grid-template-rows: 390px;
+            padding-left: 20px;
+            @media #{$mq-1250-down} {
+                padding-left: 40px;
+                grid-template-columns: 38% 18% 21% auto;
+            }
+            @media #{$mq-500} {
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                padding: 0 20px;
+                margin-bottom: 235px;
+            }
+            .footItem1 {
+                font-family: 'Manrope';
+                text-align: center;
+                padding-top: 75px;
+                @media #{$mq-1250-down} {
+                    padding-top: 80px;
+                }
+                @media #{$mq-500} {
+                    padding-top: 60px;
+                }
+                .brandImg {
+                    filter: invert(1);
+                    width: 207px;
+                    @media #{$mq-1250-down} {
+                        width: 164px;
+                    }
+                }
+    
+                .web-info{
+                    width: 310px;
+                    text-align: center;
+                    @media #{$mq-1250-down} {
+                        text-align: left;
+                    }
+                    @media #{$mq-500} {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .siteDescript {
+                        color: $white;
+                        font-size: 12px;
+                        line-height: 21px;
+                        margin-top: 20px;
+                        @media #{$mq-1250-down} {
+                            font-size: 10px;
+                            line-height: 19px;
+                            margin: 23px 86px 0 1px;
+                        }
+                        @media #{$mq-500} {
+                            margin: 22px 0;
+                            font-size: 12px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+            .footItem2 {
+                font-family: 'Manrope';
+                padding: 113px 0 0 15px;
+                @media #{$mq-1250-down} {
+                    padding: 103px 0 0 14px;
+                }
+                @media #{$mq-500} {
+                    text-align: center;
+                }
+                &:nth-child(2) {
+                    @media #{$mq-500} {
+                        padding: 18px 0 0;
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4) {
+                    @media #{$mq-500} {
+                        padding: 45px 0 0;
+                    }
+                }
+                .navTitle {
+                    color: $footerblue;
+                    font-size: 14px;
+                    line-height: 23px;
+                    font-weight: bold;
+                    margin: 0 0 17px 0;
+                    @media #{$mq-500} {
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
+                }
+                .footLinks {
+                    list-style: none;
+                    padding: 0;
+                    a {
+                        margin: 0;
+                        font-size: 14px;
+                        line-height: 32px;
+                        color: $white;
+                        display: block;
+                        text-decoration: none;
+                        @media #{$mq-500} {
+                            line-height: 29px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .social-icons {
+                    display: flex;
+                    @media #{$mq-1250-down} {
+                        margin: 24px 0 0 4px;
+                    }
+                    @media #{$mq-500} {
+                        justify-content: center;
+                        margin-top: 23px;
+                    }
+                    a {
+                        border-radius: 8px;
+                        background-color: $footerblue;
+                        width: 39px;
+                        height: 39px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @media #{$mq-1250-down} {
+                            width: 24px;
+                            height: 24px;
+                        }
+                        @media #{$mq-500} {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                    .soc-ico:nth-child(2) {
+                        margin: 0 20px;
+                        @media #{$mq-1250-down} {
+                            margin: 0 14px;
+                        }
+                        @media #{$mq-500} {
+                            margin: 0 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footImg {
+        position: absolute;
+        bottom: 0;
+        right: 70px;
+        @media #{$mq-1250-down}{
+            right: 31px;
+            width: 136px;
+        }
+        @media #{$mq-500} {
+            right: 120px;
+            bottom: 62px;
+        }
+    }
+    .copyright {
+        width: 100%;
+        background-color: $darkblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-family: 'Manrope';
+            color: $white;
+            font-size: 12px;
+            line-height: 23px;
+            margin: 18px 0;
+            @media #{$mq-1250-down}{
+                margin: 19px 0;
+                font-size: 10px;
+            }
+            
+        }
+    }
+
+}

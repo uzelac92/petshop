@@ -1,0 +1,194 @@
+#contact {
+    background-color: $lyellow;
+    width: 100vw;
+    @media #{$mq-500} {
+        margin-bottom: 58px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 814px;
+        @media #{$mq-1250-down} {
+            height: 639px;
+        }
+        @media #{$mq-500} {
+            display: block;
+            height: auto;
+        }
+        .cont-cards{
+            width: 50%;
+            text-align: center;
+            position: relative;
+            @media #{$mq-500} {
+                width: 100%;
+            }
+            img {
+                border-radius: 25px;
+                object-fit: cover;
+                display: block;
+                position: absolute;
+                box-shadow: 4px 4px 37px -13px rgba(0,0,0,0.75);
+                &.puppy-card:nth-child(1) {
+                    width: 277px;
+                    height: 285px;
+                    bottom: 340px;
+                    right: 258px;
+                    z-index: 2;
+                    @media #{$mq-1250-down} {
+                        width: 160px;
+                        height: 167px;
+                        top: 172px;
+                        left: 32px;
+                    }
+                    @media #{$mq-500} {
+                        width: 102px;
+                        height: 104px;
+                        top: 195px;
+                        border-radius: 10px;
+                        left: 84px;
+                    }
+                }
+                &.puppy-card:nth-child(2) {
+                    width: 297px;
+                    height: 331px;
+                    bottom: 220px;
+                    right: 78px;
+                    z-index: 1;
+                    @media #{$mq-1250-down} {
+                        width: 173px;
+                        height: 191px;
+                        top: 217px;
+                        left: 127px;
+                    }
+                    @media #{$mq-500} {
+                        border-radius: 10px;
+                        width: 106px;
+                        height: 120px;
+                        top: 223px;
+                        left: 144px;
+                    }
+                }
+                &.puppy-card:nth-child(3) {
+                    width: 166px;
+                    height: 173px;
+                    bottom: 144px;
+                    right: 287px;
+                    z-index: 2;
+                    @media #{$mq-1250-down} {
+                        width: 96px;
+                        height: 102px;
+                        bottom: 184px;
+                        left: 81px;
+                    }
+                    @media #{$mq-500} {
+                        border-radius: 10px;
+                        width: 61px;
+                        height: 61px;
+                        top: 310px;
+                        left: 115px;
+                    }
+                }
+            }
+        }
+        .cont-form {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media #{$mq-768} {
+                display: block;
+                padding-top: 40px;
+            }
+            @media #{$mq-500} {
+                width: 100%;
+            }
+            .form-container {
+                width: 73%;
+                padding-left: 10px;
+                @media #{$mq-768} {
+                    width: 80%;
+                    padding-left: 0;
+                }
+                @media #{$mq-500} {
+                    padding: 0;
+                    width: 100%;
+                }
+                .form-title {
+                    margin: 40px 0 44px 0 ;
+                    @media #{$mq-768} {
+                        margin: 40px 0 45px;
+                    }
+                    @media #{$mq-500} {
+                        margin-top: 76px;
+                    }
+                    h2 {
+                        font-family: 'Roboto Slab';
+                        font-weight: bold;
+                        font-size: 34px;
+                        line-height: 40px;
+                        color: $black;
+                        margin: 0 0 10px 0;
+                        @media #{$mq-768} {
+                            font-size: 28px;
+                        }
+                        @media #{$mq-500} {
+                            font-size: 18px;
+                        }
+                    }
+                    p {
+                        font-family: 'Manrope';
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: $lgrey;
+                        margin: 0;
+                        @media #{$mq-768} {
+                            font-size: 14px;
+                            line-height: 21px;
+                        }
+                        @media #{$mq-500} {
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+                .form-body  {
+                    @media #{$mq-768} {
+                        margin-left: 10px;
+                    }
+                    @media #{$mq-500} {
+                        margin-top: 240px;
+                    }
+                    input, textarea {
+                        width: 100%;
+                        margin: 10px 0;
+                        border-radius: 10px;
+                        padding: 15px;
+                        border: 1px solid $bordergray;
+                        &::placeholder {
+                            font-family: 'Manrope';
+                            font-size: 12px;
+                            line-height: 40px;
+                            color: $lgrey;
+                        }
+                        @media #{$mq-768} {
+                            margin: 11px 0;
+                        }
+                    }
+                    .normal-btn {
+                        width: 100%;
+                        margin-top: 20px;
+                        @media #{$mq-768} {
+                            margin-top: 24px;
+                        }
+                        @media #{$mq-500} {
+                            width: 84%;
+                            margin-top: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

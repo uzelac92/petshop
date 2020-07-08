@@ -1,0 +1,134 @@
+#aboutus {
+    margin: 172px 0 75px 0;
+    @media #{$mq-1250-down} {
+        margin: 200px 0 68px;
+    }
+    @media #{$mq-500} {
+        margin: 159px 0 0;
+    }
+    @media #{$mq-769} {
+        margin: 200px 0 68px;
+    }
+    .container {
+        @media #{$mq-1250-down} {
+            margin: 0 20px;
+        }
+        @media #{$mq-500} {
+            margin: 0;
+            padding: 0;
+        }
+        background-color: $imggrey;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: inset(0 0 0 0);
+        .about-info {
+            width: 770px;
+            font-family: 'Roboto Slab';
+            font-weight: bold;
+            text-align: center;
+            .about-sub {
+                color: $yellow;
+                font-size: 14px;
+                text-align: center;
+                margin: 65px 0 16px 0;
+                @media #{$mq-768} {
+                    margin-top: 46px;
+                }
+                @media #{$mq-500} {
+                    margin: 36px 0 12px;
+                }
+            }
+            h2 {
+                width: 65%;
+                font-size: 34px;
+                line-height: 40px;
+                color: $black;
+                text-align: center;
+                margin: 0 auto 60px;
+                @media #{$mq-768} {
+                    font-size: 28px;
+                    line-height: 38px;
+                    margin-bottom: 34px;
+                }
+                @media #{$mq-500} {
+                    font-size: 18px;
+                    line-height: 24px;
+                    width: 70%;
+                    margin-bottom: 41px;
+                }
+            }
+            .about-txt {
+                font-family: 'Manrope';
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 22px;
+                text-align: center;
+                width: 595px;
+                &:last-child { 
+                    margin: 0 10px 85px 0; 
+                    @media #{$mq-768} {
+                        margin: 0 auto 66px;
+                    }
+                    @media #{$mq-500} {
+                        margin: 24px auto 57px;
+                        width: 88%;
+                        line-height: 24px;
+                    }
+                }
+                &:not(:last-child){ 
+                    margin: 0 9px 21px 0; 
+                    @media #{$mq-768} {
+                        margin: -6px auto 25px;
+                        line-height: 27px;
+                    }
+                    @media #{$mq-500} {
+                        width: 85%;
+                        margin: auto;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        .square {
+            height: 178px;
+            width: 178px;
+            background-color: transparent;
+            border: 11px solid $yellow;
+            border-radius: 5px;
+            transform: rotate(50deg);
+            position: absolute;
+            left: -47px;
+            top: -43px;
+            @media #{$mq-768} {
+                height: 140px;
+                width: 140px;
+            }
+            @media #{$mq-500} {
+                left: -107px;
+                top: -103px;
+            }
+        }
+        .circle {
+            height: 161px;
+            width: 161px;
+            background-color: transparent;
+            border: 11px solid $green;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -71px;
+            right: -32px;
+            @media #{$mq-768} {
+                bottom: -82px;
+                right: -46px;
+                height: 145px;
+                width: 145px;
+            }
+            @media #{$mq-500} {
+                bottom: -88px;
+                right: -88px;
+            }
+        }
+    }
+}
